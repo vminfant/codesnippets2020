@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Home Page</title>
+<title>Home</title>
+<style>
+	h1 {
+    font-family: 'Andika', sans-serif;font-size: 48px;
+}
+
+h2 {
+    font-family: 'Andika', sans-serif;font-size: 36px;
+}
+
+a {
+    font-family: 'Andika', sans-serif;font-size: 24px;text-decoration:none;color:black
+}
+
+a:hover {
+  color:blue
+}
+
+hr {
+	border-top: 1px;
+}
+p {
+    font-family: 'Andika', sans-serif;font-size: 13px;
+    display: inline;
+}
+
+.split {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.left {
+  left: 0;
+  background-color: #FBFBFB;
+}
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.centered p {
+  font-family: 'Andika', sans-serif;font-size: 15px;
+}
+
+.body {
+  position: absolute;
+  top: 16%;
+  left: 24%;
+  text-align: left;  
+}
+
+.hdr {
+  position: absolute;
+  top: 4%;
+  left: 24%;
+  text-align: left;
+}
+
+</style>
 </head>
 <body>
+<div class="split left">
+  <div class="centered">
+  	<img src="https://avatars3.githubusercontent.com/u/27796304">
+    <h1>Infant Alex</h1>
+    <p>Development Consultant, Specialist</p>
+    <p>@CSG International</p>
+  </div>
+</div>
 
-  <h1>Infant Alex</h1>
-  <hr>
-  <h2>Random Notes</h2>
-  <a href="random-notes/cpp/boolean_conversion.md">CPP - How integers are converted to boolean type</a>
-
+<div class="hdr">
+    <h2>Random Notes</h2>
+</div>
+<div class="body">
+	  	<a href="random-notes/cpp/boolean_conversion.md">CPP - How integers are converted to boolean type</a><hr>
+	  	<p>May 2019, C++</p>
+  	</div>
 </body>
 </html>
