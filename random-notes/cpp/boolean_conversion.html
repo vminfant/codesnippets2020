@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/pgms.css">
+<meta charset="UTF-8">
+<title>How integers are converted to boolean type</title>
+</head>
+<body>
+<div>
+<h1> How integers are converted to boolean type </h1>
+
+Anything other than 0 is coverted to true
+
+<code>
+#include<iostream>
+
+int main() {
+
+        bool b1,b2,b3,b4,b5,b6;
+
+        b1 = -1;
+        b2 = 1;
+        b3 = 0;
+        b4 = 244;
+        b5 = true;
+        b6 = false;
+
+        std::cout << "b1 : " << b1 << "\n";
+        std::cout << "b2 : " << b2 << "\n";
+        std::cout << "b3 : " << b3 << "\n";
+        std::cout << "b4 : " << b4 << "\n";
+        std::cout << "b5 : " << b5 << "\n";
+        std::cout << "b6 : " << b6 << "\n";
+
+
+        return 0;
+}
+</code>
+<h4> Output</h4> 
+<code>
+$ ./a.out
+b1 : 1
+b2 : 1
+b3 : 0
+b4 : 1
+b5 : 1
+b6 : 0
+$
+</code>
+</div>
+</body>
+</html>
+
