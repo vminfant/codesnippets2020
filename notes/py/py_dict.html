@@ -1,8 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/pgms.css">
+<meta charset="UTF-8">
+<title>Sort the dictionary based on values</title>
+</head>
+<body>
+<div>
 <h1>Sort the dictionary based on values</h1>
 
 <p>Dictionary to sort based on the values</p>
 
-<p><code>python
+<p><code>
 names = {'ZIZ': 8, 'RGY': 2, 'TYM': 1, 'SDC': 10, 'VUW': 2, 'JCQ': 2, 'PXN': 2, 'JGU': 3, 'CGB': 1, 'BHB': 10}
 print(names)
 </code></p>
@@ -12,7 +21,7 @@ print(names)
 
 <p>Sort the dictionary using a lambda function</p>
 
-<p><code>python
+<p><code>
 sorted(names,key=lambda x:names[x])
 </code></p>
 
@@ -21,7 +30,7 @@ sorted(names,key=lambda x:names[x])
 
 <p>Sort the dictionary in descending order</p>
 
-<p><code>python
+<p><code>
 sorted(names,key=lambda x:names[x],reverse=True)
 </code></p>
 
@@ -30,22 +39,20 @@ sorted(names,key=lambda x:names[x],reverse=True)
 
 <p>Sort the dictionary using a function</p>
 
-<p>```python</p>
-
-<h1>Function to extract the value from a dictionary</h1>
-
-<p>def values(x):
+<p><code>
+# Function to extract the value from a dictionary
+def values(x):
     return names[x]
-```</p>
+</code></p>
 
-<p><code>python
+<p><code>
 sorted(names,key=values)
 </code></p>
 
 <pre><code>['TYM', 'CGB', 'RGY', 'VUW', 'JCQ', 'PXN', 'JGU', 'ZIZ', 'SDC', 'BHB']
 </code></pre>
 
-<p><code>python
+<p><code>
 sorted(names,key=values,reverse=True)
 </code></p>
 
@@ -54,30 +61,33 @@ sorted(names,key=values,reverse=True)
 
 <p>Performance stats of each methods</p>
 
-<p><code>python
+<p><code>
 %timeit sorted(names,key=lambda x:names[x])
 </code></p>
 
 <pre><code>12.2 µs ± 559 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </code></pre>
 
-<p><code>python
+<p><code>
 %timeit sorted(names,key=lambda x:names[x],reverse=True)
 </code></p>
 
 <pre><code>13.8 µs ± 636 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </code></pre>
 
-<p><code>python
+<p><code>
 %timeit sorted(names,key=values)
 </code></p>
 
 <pre><code>11.3 µs ± 690 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </code></pre>
 
-<p><code>python
+<p><code>
 %timeit sorted(names,key=values,reverse=True)
 </code></p>
 
 <pre><code>12.6 µs ± 80.9 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </code></pre>
+</div>
+</body>
+</html>
